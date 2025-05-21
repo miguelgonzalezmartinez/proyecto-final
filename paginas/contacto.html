@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../estilos/estilos.css"/>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca</a></li>
+        <li><a href="objetivo.html">Objetivo</a></li>
+        <li><a href="publicidad.html">Publicidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label><br />
+      <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+      <label for="email">Correo electrónico:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="telefono">Teléfono:</label><br />
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,15}" placeholder="Solo números" /><br /><br />
+
+      <label for="asunto">Asunto:</label><br />
+      <input type="text" id="asunto" name="asunto" /><br /><br />
+
+      <label for="motivo">Motivo del contacto:</label><br />
+      <select id="motivo" name="motivo" required>
+        <option value="">--Selecciona--</option>
+        <option value="consulta">Consulta general</option>
+        <option value="soporte">Soporte técnico</option>
+        <option value="ventas">Información de ventas</option>
+        <option value="otros">Otros</option>
+      </select><br /><br />
+
+      <label for="mensaje">Mensaje:</label><br />
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br /><br />
+
+      <label>
+        <input type="checkbox" name="suscribirse" />
+        Deseo suscribirme a boletines y novedades
+      </label><br /><br />
+
+      <button type="submit">Enviar</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 NeuroReflect</p>
+  </footer>
+</body>
+</html>
